@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SHA1Calculator">
+
+    <TextView
+        android:id="@+id/txHashSHA256"
+        android:layout_width="195dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="32dp"
+        android:background="#95949494"
+        android:text="@string/SHA1Title"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EDtextToSHA256"
+        android:layout_width="293dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:background="#A6AAAAAA"
+        android:textColorHint="#E6000000"
+        android:gravity="start|top"
+        android:hint="@string/MD5Encoder"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txHashSHA256" />
+
+    <Button
+        android:id="@+id/btnCalculateSHA256"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#1D1C1C"
+        android:onClick="btnCalulateSha1"
+        android:text="@string/BtnCalcular"
+        android:textColor="#C1FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EDtextToSHA256" />
+
+    <EditText
+        android:id="@+id/EDSha256Output"
+        android:layout_width="293dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="20dp"
+        android:background="#A6AAAAAA"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/HashOutput"
+        android:inputType="textMultiLine"
+        android:textColorHint="#E6000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculateSHA256"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

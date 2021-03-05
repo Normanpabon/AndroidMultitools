@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MD5Calculator">
+
+    <TextView
+        android:id="@+id/txHashMD5"
+        android:layout_width="191dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="44dp"
+        android:background="#95949494"
+        android:text="@string/MD5Title"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EDtextToMD5"
+        android:layout_width="293dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+
+        android:background="#A6AAAAAA"
+        android:textColorHint="#E6000000"
+        android:gravity="start|top"
+        android:hint="@string/MD5Encoder"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txHashMD5" />
+
+    <Button
+        android:id="@+id/btnCalculateMd5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#1D1C1C"
+        android:onClick="BtnCalculateMD5"
+        android:text="@string/BtnCalcular"
+        android:textColor="#C1FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EDtextToMD5" />
+
+    <EditText
+        android:id="@+id/TVMD5Output"
+        android:layout_width="293dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:background="#A6AAAAAA"
+        android:textColorHint="#E6000000"
+        android:gravity="start|top"
+        android:hint="@string/HashOutput"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculateMd5"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

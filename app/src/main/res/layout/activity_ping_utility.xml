@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".PingUtility">
+
+    <TextView
+        android:id="@+id/MacTitletxt"
+        android:layout_width="128dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:background="#95949494"
+        android:text="@string/PingUtilityTitle"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ETMac"
+        android:layout_width="238dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:background="#A6AAAAAA"
+        android:textColorHint="#E6000000"
+        android:hint="@string/HostToPing"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MacTitletxt" />
+
+    <Button
+        android:id="@+id/btnBuscarMac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:onClick="BtnMakePing"
+        android:background="#1D1C1C"
+        android:textColor="#C1FFFFFF"
+        android:text="@string/BtnMakePing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETMac" />
+
+    <EditText
+        android:id="@+id/ETMacVendor"
+        android:layout_width="329dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:background="#A6AAAAAA"
+        android:textColorHint="#E6000000"
+        android:gravity="start|top"
+        android:hint="@string/LogInfo"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscarMac"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

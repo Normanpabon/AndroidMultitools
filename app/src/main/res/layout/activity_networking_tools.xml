@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".NetworkingTools">
+
+    <TextView
+        android:id="@+id/TxNetworkingTitle"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="44dp"
+        android:background="#95949494"
+        android:text="@string/NetworkingTitle"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BtnPing"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="76dp"
+        android:onClick="BtnPingUtility"
+        android:background="#1D1C1C"
+        android:textColor="#C1FFFFFF"
+        android:text="@string/BtnPing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxNetworkingTitle" />
+
+    <Button
+        android:id="@+id/BtnArpList"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:background="#1D1C1C"
+        android:onClick="BtnArpDevices"
+        android:text="@string/BtnArpList"
+        android:textColor="#C1FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnPing" />
+
+    <Button
+        android:id="@+id/BtnMacVendorList"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:background="#1D1C1C"
+        android:onClick="BtnMacVendors"
+        android:text="@string/BtnMacVendorList"
+        android:textColor="#C1FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnArpList"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

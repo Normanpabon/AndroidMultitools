@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:id="@+id/TxtDecryptTitle"
+        android:layout_width="235dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/MessageDecryption"
+        android:background="#95949494"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtToDecrypt"
+        android:layout_width="285dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:background="#A6AAAAAA"
+        android:textColorHint="#E6000000"
+        android:gravity="start|top"
+        android:hint="@string/txtToDecrypt"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edEncryptPassword" />
+
+    <Button
+        android:id="@+id/DecryptBtn"
+        android:layout_width="96dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:background="#1D1C1C"
+        android:textColor="#C1FFFFFF"
+        android:onClick="btnDecrypt"
+        android:text="@string/btnDecrypto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtToDecrypt" />
+
+    <EditText
+        android:id="@+id/edEncryptPassword"
+        android:layout_width="222dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="20dp"
+        android:background="#A6AAAAAA"
+        android:textColorHint="#E6000000"
+        android:ems="10"
+        android:hint="@string/PasswordHint"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtDecryptTitle" />
+
+    <EditText
+        android:id="@+id/DecryptedEd"
+        android:layout_width="285dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:background="#A6AAAAAA"
+        android:textColorHint="#E6000000"
+
+        android:gravity="start|top"
+        android:hint="@string/DecryptedOutput"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DecryptBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

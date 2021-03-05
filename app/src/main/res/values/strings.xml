@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Android MultiTool</string>
+    <string name="tv_appName">Android MultiTool</string>
+    <string name="Btn_Encoders_Decoders">Text Encoders/Decoders</string>
+    <string name="Btn_Hashes">Hash Calculator</string>
+    <string name="Btn_Networking">Network Tools</string>
+    <string name="Btn_Crypto">Encryption</string>
+
+    <!-- Encoders class -->
+    <string name="TitleEncoder">Text common encoders</string>
+    <string name="btnBase64">Base64 Encoder/Decoder</string>
+    <string name="btnBinary">Binary Encoder</string>
+    <string name="btnHex">Hex Encoder</string>
+    <string name="btnAscii">ASCII Encoder/Decoder</string>
+    <string name="btnOct">OCT Encoder/Decoder</string>
+
+    <!-- Base64ED class -->
+    <string name="TitleBase64">Base64 Encoder/Decoder</string>
+    <string name="HintTextB64">Type text here</string>
+    <string name="HintBase64">Type Base64 here</string>
+    <string name="Base64Encode">Encode</string>
+    <string name="Base64Decoder">Decode</string>
+
+    <!-- BinaryED class -->
+    <string name="TittleBinary">Binary Encoder/Decoder</string>
+    <string name="HintTextBinary">Type text here</string>
+    <string name="HintBinary">Type Binary here</string>
+    <string name="BinaryEncode">Encode</string>
+    <string name="BinaryDecoder">Decode</string>
+
+
+    <!-- HEXED class -->
+    <string name="TittleHex">Hex Encoder/Decoder</string>
+    <string name="HintTextHex">Type text here</string>
+    <string name="HintHex">Type Hex here</string>
+    <string name="HexEncode">Encode</string>
+    <string name="HexDecoder">Decode</string>
+
+    <!-- ASCII Class -->
+    <string name="TittleAscii">ASCII Encoder/Decoder</string>
+    <string name="HintAscii">Type Ascii here</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!-- Hashes class -->
+
+    <string name="TitleHashes">Common Hashes</string>
+    <string name="btnMd5">MD5 Calculator</string>
+    <string name="btnSha256">SHA256 Calculator</string>
+    <string name="btnSha1">SHA1 Calculator</string>
+
+    <!-- MD5 Hash -->
+    <string name="MD5Title">MD5 Calculator</string>
+    <string name="MD5Encoder">Type text to encode</string>
+    <string name="BtnCalcular">Calculate Hash</string>
+    <string name="HashOutput">Hash output</string>
+
+    <string name="SHA1Title">SHA1 Calulator</string>
+    <string name="SHA256Title">SHA256 Calculator</string>
+
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!-- Networking class -->
+    <string name="NetworkingTitle">Networking common Utilities</string>
+
+    <string name="BtnPing">Ping Utility</string>
+    <string name="BtnArpList">Arp Devices</string>
+    <string name="BtnMacVendorList">MacVendor List</string>
+
+    <!-- PingUtility class -->
+    <string name="PingUtilityTitle">Ping Utility</string>
+    <string name="HostToPing">Type host ip</string>
+    <string name="BtnMakePing">Ping!</string>
+    <string name="LogInfo">Result</string>
+
+    <!-- MacVendor class -->
+    <string name="MacVendorTitle">MacVendor Search</string>
+    <string name="SearchMac">Search</string>
+    <string name="hintMac">Type MacAddress here</string>
+    <string name="hintMacR">Vendor</string>
+
+    <!-- ARPList -->
+    <string name="ARPTitle">ARP Devices List</string>
+    <string name="BtnARP">Show ARP List</string>
+    <string name="ArpOut">ARP List Output</string>
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!-- Crypto class -->
+    <string name="CryptoTitle">AES Message Encryption</string>
+    <string name="BtnEncrypt">Encrypt</string>
+    <string name="BtnDecrypt">Decrypt</string>
+
+    <!-- MessageCrypto class -->
+    <string name="MessageEncryption">Message Encryption</string>
+    <string name="txtToEncrypt">Type here your message</string>
+    <string name="btnEncrypto">Encrypt!</string>
+    <string name="PasswordHint">Encryption Pass</string>
+    <string name="EncryptOutput">Encrypted Output</string>
+
+    <!-- MessageDecryption class -->
+    <string name="MessageDecryption">Message Decrypt</string>
+    <string name="txtToDecrypt">Paste the encrypted message</string>
+    <string name="btnDecrypto">Decrypt!</string>
+    <string name="DecryptedOutput">Decrypted Output</string>
+
+</resources>

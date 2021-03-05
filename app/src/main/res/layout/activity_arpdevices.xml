@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ARPDevices">
+
+
+    <TextView
+        android:id="@+id/TVARPDevices"
+        android:layout_width="211dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="44dp"
+        android:background="#95949494"
+        android:text="@string/ARPTitle"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnShowARPD"
+        android:layout_width="135dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:background="#1D1C1C"
+        android:onClick="ShowDevicesARP"
+        android:text="@string/BtnARP"
+        android:textColor="#C1FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EdARPDevices"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/EdARPDevices"
+        android:layout_width="294dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="#A6AAAAAA"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/ArpOut"
+        android:inputType="textMultiLine"
+        android:textColorHint="#E6000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVARPDevices" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
