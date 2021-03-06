@@ -50,7 +50,7 @@
 
     <!-- MD5 Hash -->
     <string name="MD5Title">MD5 Calculator</string>
-    <string name="MD5Encoder">Type text to encode</string>
+    <string name="MD5Encoder">Type Text to encode</string>
     <string name="BtnCalcular">Calculate Hash</string>
     <string name="HashOutput">Hash output</string>
 
