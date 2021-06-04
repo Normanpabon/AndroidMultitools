@@ -12,7 +12,9 @@
     <string name="HintNumeroMatriz" translatable="false">Valor</string>
     <string name="MensajeNumeroMatriz" translatable="false"></string>
     <string name="Matriz" translatable="false">Matriz</string>
+    <string name="HintnumNodos" translatable="false">Número de nodos del grafo</string>
     <string name="btnAgregarA_Matriz" translatable="false">Agregar a matriz</string>
+    <string name="btnDimenMatriz" translatable="false">Enviar numero de nodos</string>
 
     <!-- Encoders class -->
     <string name="TitleEncoder">Text common encoders</string>

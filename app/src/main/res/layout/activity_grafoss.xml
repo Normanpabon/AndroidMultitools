@@ -33,19 +33,19 @@
         android:id="@+id/txt_infoValorMatriz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
         android:text="@string/MensajeNumeroMatriz"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo_grafo" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_enviar_numNodos" />
 
     <TextView
-        android:id="@+id/txt_matriz"
+        android:id="@+id/tv_matriz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp"
         android:text="@string/Matriz"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,10 +55,34 @@
         android:id="@+id/btn_agregarValor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
         android:text="@string/btnAgregarA_Matriz"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtnum_valor" />
+
+    <EditText
+        android:id="@+id/txt_numNodos"
+        android:layout_width="312dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/HintnumNodos"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_grafo" />
+
+    <Button
+        android:id="@+id/btn_enviar_numNodos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/btnDimenMatriz"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_numNodos" />
 </androidx.constraintlayout.widget.ConstraintLayout>
