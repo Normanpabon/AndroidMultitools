@@ -7,6 +7,8 @@
     <string name="Btn_Networking">Herramientas Red</string>
     <string name="Btn_Crypto">Encryptacion</string>
 
+
+    <string name="TvMatrizT" translatable="false">Matriz Transpuesta</string>
     <!-- Encoders class -->
     <string name="TitleEncoder">Codificadores comunes</string>
     <string name="btnBase64">Codificador Base64</string>
@@ -14,6 +16,7 @@
     <string name="btnHex">Codificador Hexa</string>
     <string name="btnAscii">Codificador ASCII</string>
     <string name="btnOct">OCT Encoder/Decoder</string>
+    <string name="btnGrafo">Matriz / Grafo decodificador </string>
 
     <!-- Base64ED class -->
     <string name="TitleBase64">Codificador Base64</string>

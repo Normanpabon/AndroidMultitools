@@ -34,6 +34,19 @@
         app:layout_constraintTop_toBottomOf="@+id/btnDecrypt" />
 
     <Button
+        android:id="@+id/btnGrafo"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="104dp"
+        android:background="#1D1C1C"
+        android:onClick="GrafosActivity"
+        android:text="@string/btnGrafo"
+        android:textColor="#C1FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDecrypt" />
+
+    <Button
         android:id="@+id/btnAscii"
         android:layout_width="255dp"
         android:layout_height="40dp"

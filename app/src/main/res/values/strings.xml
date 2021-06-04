@@ -8,6 +8,8 @@
 
     <!-- grafos class-->
 
+    <string name="TvMatrizT" translatable="false">Matriz Transpuesta</string>
+
     <string name="TituloGrafo" translatable="false">Grafos</string>
     <string name="HintNumeroMatriz" translatable="false">Valor</string>
     <string name="MensajeNumeroMatriz" translatable="false"></string>
@@ -23,6 +25,7 @@
     <string name="btnHex">Hex Encoder</string>
     <string name="btnAscii">ASCII Encoder/Decoder</string>
     <string name="btnOct">OCT Encoder/Decoder</string>
+    <string name="btnGrafo">Matrix / Grafo decoder </string>
 
     <!-- Base64ED class -->
     <string name="TitleBase64">Base64 Encoder/Decoder</string>
