@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.h4lfcr3st.androidswissarmy.ChatServer;
 import com.h4lfcr3st.androidswissarmy.SocketComms;
@@ -63,20 +64,34 @@ public class Chat extends AppCompatActivity {
 
     }
 
-    public void SendMessage(View view) throws IOException, ClassNotFoundException {
-        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-        StrictMode.setThreadPolicy(policy);
-        String tmpMsg = clientMessage.getText().toString();
-        String tmp;
-        tmp = this.socket.SendMessage(tmpMsg);
-        this.history.clearComposingText();
-        this.history.setText(tmp);
+    public void SendMessage(View view){
+        try {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+            String tmpMsg = clientMessage.getText().toString();
+            String tmp;
+            tmp = this.socket.SendMessage(tmpMsg);
+            this.history.clearComposingText();
+            this.history.setText(tmp);
+            Toast.makeText(this, "Mensaje enviado", Toast.LENGTH_SHORT).show();
+        }catch (IOException e){
+            Toast.makeText(this, "Error al enviar mensaje", Toast.LENGTH_SHORT).show();
+        }catch (ClassNotFoundException e){
+            Toast.makeText(this, "Error al enviar mensaje", Toast.LENGTH_SHORT).show();
+
+        }
 
     }
 
-    public void HostServer(View view) throws IOException {
-        this.chatServer = new ChatServer(Integer.parseInt(hostPort.getText().toString()));
-        new Thread(this.chatServer).start();
+    public void HostServer(View view) {
+        try{
+            this.chatServer = new ChatServer(Integer.parseInt(hostPort.getText().toString()));
+            new Thread(this.chatServer).start();
+            Toast.makeText(this, "Servidor creado", Toast.LENGTH_SHORT).show();
+        }catch (IOException e){
+            Toast.makeText(this, "Error creando servidor", Toast.LENGTH_SHORT).show();
+        }
+
 
     }
 }
