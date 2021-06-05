@@ -30,4 +30,9 @@ public class NetworkingTools extends AppCompatActivity {
 
     }
 
+    public void BtnSocketChat(View view){
+        Intent Chat = new Intent(this, Chat.class);
+        startActivity(Chat);
+    }
+
 }
