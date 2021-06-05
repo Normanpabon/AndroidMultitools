@@ -35,5 +35,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(enterCrypto);
 
     }
+    public void SecurePassword(View view){
+        Intent enterSecure = new Intent(this, SafePassword.class);
+        startActivity(enterSecure);
+    }
 
 }
