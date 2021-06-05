@@ -26,4 +26,9 @@ public class HashesMenu extends AppCompatActivity {
         Intent HashSha256 = new Intent(this, SHA256Calculator.class);
         startActivity(HashSha256);
     }
+
+    public void BtnSafePassword(View view){
+        Intent safePassword = new Intent(this, SafePassword.class);
+        startActivity(safePassword);
+    }
 }
