@@ -9,10 +9,10 @@
     <!-- grafos class-->
 
     <string name="TvResultadoMatriz" translatable="false">Resultados</string>
+    <string name="TvMatrizT" translatable="false">Matriz Transpuesta</string>
 
     <string name="TituloGrafo" translatable="false">Grafos</string>
     <string name="HintNumeroMatriz" translatable="false">Valor</string>
-    <string name="MensajeNumeroMatriz" translatable="false"></string>
     <string name="Matriz" translatable="false">Matriz</string>
     <string name="HintnumNodos" translatable="false">Número de nodos del grafo</string>
     <string name="btnAgregarA_Matriz" translatable="false">Agregar a matriz</string>

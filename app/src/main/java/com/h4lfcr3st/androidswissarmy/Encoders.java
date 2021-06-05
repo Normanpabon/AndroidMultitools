@@ -37,8 +37,8 @@ public class Encoders extends AppCompatActivity {
     }
 
     public void GrafosActivity(View view){
-        Intent EnterGrafoss = new Intent(this, grafoss.class);
-        startActivity(EnterGrafoss);
+        Intent EnterGrafos = new Intent(this, grafoss.class);
+        startActivity(EnterGrafos);
     }
 
 
