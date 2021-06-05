@@ -10,17 +10,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class grafoss extends AppCompatActivity {
+
     private EditText valorMatriz, cantNodos;
     private TextView matriz, matrizT, resultado;
     private Button btnAgregar,btnCantNodos;
-    private int[][] numerosMatriz;
-    private int[][] numerosMatrizT;
-    private boolean dimInicializada=false;
-
-    String acumulador="",acumuladorT="",acumResultados="";
-    int acumRep=1, countMatriz=0;
-    int sumaFilas = 0, sumaColumnas = 0, noDirigido = 0, acumColumna = 0,numNodos=0,i=0,j=0;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +31,13 @@ public class grafoss extends AppCompatActivity {
         btnCantNodos = findViewById(R.id.btn_enviar_numNodos);
 
     }
+    private int[][] numerosMatriz;
+    private int[][] numerosMatrizT;
+    private boolean dimInicializada=false;
+
+    String acumulador="",acumuladorT="",acumResultados="";
+    int acumRep=1, countMatriz=0;
+    int sumaFilas = 0, sumaColumnas = 0, noDirigido = 0, acumColumna = 0,numNodos=0,i=0,j=0;
 
     public void dimensionMatriz(View view) {
         String dimMatriz = String.valueOf(cantNodos.getText());
@@ -46,13 +46,13 @@ public class grafoss extends AppCompatActivity {
         }else{
             valorMatriz.setEnabled(true);
             btnAgregar.setEnabled(true);
-            matriz.setText("");
-            matrizT.setText("");
+            matriz.setText("Matriz");
+            matrizT.setText("Matriz Transpuesta");
             acumulador="";
             acumuladorT="";
             acumRep=0;
             countMatriz=0;
-            resultado.setText("");
+            resultado.setText("Resultados");
             sumaFilas = 0;
             sumaColumnas = 0;
             i=0;
@@ -60,9 +60,14 @@ public class grafoss extends AppCompatActivity {
             btnCantNodos.setEnabled(false);
             cantNodos.setEnabled(false);
             numNodos = Integer.parseInt(String.valueOf(cantNodos.getText()));
-            inicializarMatriz(numNodos);
-            if (!this.dimInicializada){
+            if (numNodos>10){
+                cantNodos.setError("Valor muy grande");
+                Toast.makeText(this, "La matriz tiene un tamaño muy grande", Toast.LENGTH_SHORT).show();
+            }else{
                 inicializarMatriz(numNodos);
+                if (!this.dimInicializada){
+                    inicializarMatriz(numNodos);
+                }
             }
         }
     }

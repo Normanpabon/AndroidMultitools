@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Base64;
 import android.view.View;
+import android.widget.Toast;
 
 public class Encoders extends AppCompatActivity {
 
@@ -37,8 +38,9 @@ public class Encoders extends AppCompatActivity {
     }
 
     public void GrafosActivity(View view){
-        Intent EnterGrafos = new Intent(this, grafoss.class);
-        startActivity(EnterGrafos);
+        Intent EnterGrafoss = new Intent(Encoders.this, grafoss.class);
+        startActivity(EnterGrafoss);
+        Toast.makeText(this, "botón presiondao", Toast.LENGTH_SHORT).show();
     }
 
 
