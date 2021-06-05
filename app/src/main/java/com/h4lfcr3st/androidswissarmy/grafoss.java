@@ -63,6 +63,10 @@ public class grafoss extends AppCompatActivity {
             if (numNodos>10){
                 cantNodos.setError("Valor muy grande");
                 Toast.makeText(this, "La matriz tiene un tamaño muy grande", Toast.LENGTH_SHORT).show();
+                btnCantNodos.setEnabled(true);
+                cantNodos.setEnabled(true);
+                valorMatriz.setEnabled(false);
+                btnAgregar.setEnabled(false);
             }else{
                 inicializarMatriz(numNodos);
                 if (!this.dimInicializada){

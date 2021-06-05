@@ -40,7 +40,6 @@ public class Encoders extends AppCompatActivity {
     public void GrafosActivity(View view){
         Intent EnterGrafoss = new Intent(Encoders.this, grafoss.class);
         startActivity(EnterGrafoss);
-        Toast.makeText(this, "botón presiondao", Toast.LENGTH_SHORT).show();
     }
 
 

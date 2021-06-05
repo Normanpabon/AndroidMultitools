@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/tv_resultMatriz"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
 
     <TextView
         android:id="@+id/titulo_grafo"
@@ -12,7 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="32dp"
+        android:background="#000000"
         android:text="@string/TituloGrafo"
+        android:textColor="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,9 +25,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="28dp"
+        android:background="#FFFFFF"
         android:ems="10"
         android:hint="@string/HintNumeroMatriz"
         android:inputType="number"
+        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_enviar_numNodos" />
@@ -36,7 +40,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
+        android:background="#000000"
         android:text="@string/TvMatrizT"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/tv_matriz"
         app:layout_constraintTop_toBottomOf="@+id/btn_agregarValor" />
@@ -47,7 +53,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="32dp"
+        android:background="#000000"
         android:text="@string/Matriz"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_agregarValor" />
@@ -70,9 +78,11 @@
         android:layout_height="53dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="48dp"
+        android:background="#FFFFFF"
         android:ems="10"
         android:hint="@string/HintnumNodos"
         android:inputType="number"
+        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo_grafo" />
@@ -90,12 +100,14 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_numNodos" />
 
     <TextView
-        android:id="@+id/tv_matrizT"
+        android:id="@+id/tv_resultMatriz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="84dp"
+        android:background="#FFFFFF"
         android:text="@string/TvResultadoMatriz"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_matriz" />
