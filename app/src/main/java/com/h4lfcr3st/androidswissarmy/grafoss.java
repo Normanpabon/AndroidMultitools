@@ -60,19 +60,28 @@ public class grafoss extends AppCompatActivity {
             btnCantNodos.setEnabled(false);
             cantNodos.setEnabled(false);
             numNodos = Integer.parseInt(String.valueOf(cantNodos.getText()));
-            if (numNodos>10){
-                cantNodos.setError("Valor muy grande");
-                Toast.makeText(this, "La matriz tiene un tamaño muy grande", Toast.LENGTH_SHORT).show();
-                btnCantNodos.setEnabled(true);
-                cantNodos.setEnabled(true);
+            if (numNodos==0){
+                resultado.setText("El grafo es nulo");
                 valorMatriz.setEnabled(false);
                 btnAgregar.setEnabled(false);
+                btnCantNodos.setEnabled(true);
+                cantNodos.setEnabled(true);
             }else{
-                inicializarMatriz(numNodos);
-                if (!this.dimInicializada){
+                if (numNodos>10){
+                    cantNodos.setError("Valor muy grande");
+                    Toast.makeText(this, "La matriz tiene un tamaño muy grande", Toast.LENGTH_SHORT).show();
+                    btnCantNodos.setEnabled(true);
+                    cantNodos.setEnabled(true);
+                    valorMatriz.setEnabled(false);
+                    btnAgregar.setEnabled(false);
+                }else{
                     inicializarMatriz(numNodos);
+                    if (!this.dimInicializada){
+                        inicializarMatriz(numNodos);
+                    }
                 }
             }
+
         }
     }
     public void inicializarMatriz (int numNodos){
