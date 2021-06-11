@@ -8,7 +8,38 @@
     <string name="Btn_Crypto">Encryptacion</string>
 
 
-    <string name="TvMatrizT" translatable="false">Matriz Transpuesta</string>
+
+    <!-- safePassword class -->
+    <string name="safePasswordTitle">Contraseña segura </string>
+    <string name="nota">Nota: Esta función trabaja en base a criterios considerados importantes para que una contraseña sea segura.</string>
+    <string name="passwordHint"> Contraseña a analizar</string>
+    <string name="passwordReport">Reporte</string>
+    <string name="btnClean">Limpiar</string>
+    <string name="btnCheck">Revisar</string>
+
+
+    <!-- chat class -->
+    <string name="txtServerIp"> direccion ipv4</string>
+    <string name="Username"> nombreUsuario</string>
+    <string name="Connect">Conectarse</string>
+    <string name="port">Puerto</string>
+    <string name="MsgHint">mensaje a enviar</string>
+    <string name="btnEnviar">Enviar</string>
+    <string name="hostPort">Puerto Hosteo</string>
+    <string name="Hostbtn">Hostear</string>
+
+    <!-- grafos class-->
+
+    <string name="TvResultadoMatriz" translatable="true">Resultados</string>
+    <string name="TvMatrizT" translatable="true">Matriz Transpuesta</string>
+
+    <string name="TituloGrafo" translatable="true">Grafos</string>
+    <string name="HintNumeroMatriz" translatable="false">Valor</string>
+    <string name="Matriz" translatable="false">Matriz</string>
+    <string name="HintnumNodos" translatable="false">Número de nodos del grafo</string>
+    <string name="btnAgregarA_Matriz" translatable="false">Agregar a matriz</string>
+    <string name="btnDimenMatriz" translatable="false">Enviar numero de nodos</string>
+
     <!-- Encoders class -->
     <string name="TitleEncoder">Codificadores comunes</string>
     <string name="btnBase64">Codificador Base64</string>

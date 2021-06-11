@@ -1,0 +1,5 @@
+La aplicacion esta programada en java y dirigida hacia android,
+el ".apk" es el equivalente al ".exe" para telefono, solo debe descargarse e instalarse.
+
+Por otro lado, en los dias siguientes sera actualizada la app en el playstore, apenas este
+en la tienda de google te mando el link profe, un saludo.

@@ -6,17 +6,38 @@
     <string name="Btn_Networking">Network Tools</string>
     <string name="Btn_Crypto">Encryption</string>
 
+
+    <!-- safePassword class -->
+    <string name="safePasswordTitle">Safe password </string>
+    <string name="nota">Note: This function works based on criteria considered important for a password to be secure.</string>
+    <string name="passwordHint"> Password to check</string>
+    <string name="passwordReport">Report</string>
+    <string name="btnClean">Clean</string>
+    <string name="btnCheck">Check</string>
+
+    <!-- chat class -->
+    <string name="txtServerIp"> server ipv4</string>
+    <string name="Username"> Username</string>
+    <string name="Connect">Connect</string>
+    <string name="port">Port</string>
+    <string name="MsgHint">set message</string>
+    <string name="btnEnviar">Send</string>
+    <string name="hostPort">Host port</string>
+    <string name="Hostbtn">Host</string>
+
+
+
     <!-- grafos class-->
 
-    <string name="TvResultadoMatriz" translatable="false">Resultados</string>
-    <string name="TvMatrizT" translatable="false">Matriz Transpuesta</string>
+    <string name="TvResultadoMatriz" translatable="true">Results</string>
+    <string name="TvMatrizT" translatable="true">transposed Matrix</string>
 
-    <string name="TituloGrafo" translatable="false">Grafos</string>
-    <string name="HintNumeroMatriz" translatable="false">Valor</string>
-    <string name="Matriz" translatable="false">Matriz</string>
-    <string name="HintnumNodos" translatable="false">Número de nodos del grafo</string>
-    <string name="btnAgregarA_Matriz" translatable="false">Agregar a matriz</string>
-    <string name="btnDimenMatriz" translatable="false">Enviar numero de nodos</string>
+    <string name="TituloGrafo" translatable="true">Graph</string>
+    <string name="HintNumeroMatriz" translatable="true">Value</string>
+    <string name="Matriz" translatable="true">Matrix</string>
+    <string name="HintnumNodos" translatable="true">Number of nodes of the graph</string>
+    <string name="btnAgregarA_Matriz" translatable="true">Add to matrix</string>
+    <string name="btnDimenMatriz" translatable="true">Send number of nodes</string>
 
     <!-- Encoders class -->
     <string name="TitleEncoder">Text common encoders</string>

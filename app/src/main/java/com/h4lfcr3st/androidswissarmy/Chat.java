@@ -65,9 +65,9 @@ public class Chat extends AppCompatActivity {
     }
 
     public void SendMessage(View view){
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
         try {
-            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-            StrictMode.setThreadPolicy(policy);
             String tmpMsg = clientMessage.getText().toString();
             String tmp;
             tmp = this.socket.SendMessage(tmpMsg);

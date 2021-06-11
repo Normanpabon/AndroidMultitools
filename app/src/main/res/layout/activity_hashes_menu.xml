@@ -73,7 +73,7 @@
         android:layout_height="44dp"
         android:layout_marginTop="20dp"
         android:background="#1D1C1C"
-        android:onClick="BtnHashSha256"
+        android:onClick="BtnSafePassword"
         android:text="Revisar contraseña"
         android:textColor="#C1FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
