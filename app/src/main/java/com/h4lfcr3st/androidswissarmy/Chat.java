@@ -64,6 +64,10 @@ public class Chat extends AppCompatActivity {
 
     }
 
+    public void InitThread(){
+        // iniciar hilo
+    }
+
     public void SendMessage(View view){
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
@@ -80,6 +84,9 @@ public class Chat extends AppCompatActivity {
             Toast.makeText(this, "Error al enviar mensaje", Toast.LENGTH_SHORT).show();
 
         }
+        // erease the last message
+        clientMessage.setText("");
+
 
     }
 
