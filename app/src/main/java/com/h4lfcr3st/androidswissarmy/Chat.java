@@ -59,7 +59,7 @@ public class Chat extends AppCompatActivity {
 
     public void ConnectServer(){
         this.socket = new SocketComms(this.clientName, this.ip, this.port);
-        InitThread(2, this.socket, " ");
+        InitThread(10, this.socket, " ");
         Toast.makeText(this, "Fetching messages", Toast.LENGTH_SHORT).show();
 
     }
@@ -96,7 +96,7 @@ public class Chat extends AppCompatActivity {
 
 
         clientMessage.setText("");
-        InitThread(2, this.socket, " ");
+        InitThread(10, this.socket, " ");
 
 
     }

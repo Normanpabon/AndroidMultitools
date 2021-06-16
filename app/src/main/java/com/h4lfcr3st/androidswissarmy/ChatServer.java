@@ -27,32 +27,36 @@ public class ChatServer extends Thread {
 
     public void HostServer() throws IOException, ClassNotFoundException {
         try{
-            System.out.println("Server Started \n\n");
-            System.out.println("Server port : " + this.port);
+
             while(true){
                 String tmp;
                 this.socket = serverSocket.accept();
                 this.ois = new ObjectInputStream(this.socket.getInputStream());
 
-                if(this.ois.readObject() == null){
-                    tmp = null;
-                }else{
+                try {
                     tmp = (String) this.ois.readObject(); //msg to show
+                }catch (NullPointerException e){
+
+                    tmp = null;
                 }
+
+
+
 
                 if(tmp != null && tmp.equals("!Clear")){
                     this.history = " ";
-                    System.out.println("History cleared by : " + tmp +"\n\n\n");
+
                 } else if (tmp != null) {
-                    System.out.println("Msg recived: \t" + tmp);
+
                     this.history += "\n" + tmp;
                 }
 
                 this.oos = new ObjectOutputStream(socket.getOutputStream());
                 this.oos.writeObject(this.history);
 
-                this.ois.close();
+
                 this.oos.close();
+                this.ois.close();
                 this.socket.close();
 
 
@@ -64,9 +68,6 @@ public class ChatServer extends Thread {
         }
 
     }
-
-
-
 
 
 
