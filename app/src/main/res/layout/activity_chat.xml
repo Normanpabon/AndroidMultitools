@@ -10,7 +10,7 @@
     <EditText
         android:id="@+id/txtServerIp"
         android:layout_width="210dp"
-        android:layout_height="44dp"
+        android:layout_height="40dp"
         android:layout_marginTop="92dp"
         android:background="#A6AAAAAA"
         android:ems="10"
@@ -42,8 +42,8 @@
 
     <EditText
         android:id="@+id/txtServerPort"
-        android:layout_width="55dp"
-        android:layout_height="44dp"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
         android:layout_marginTop="92dp"
         android:layout_marginEnd="16dp"
         android:background="#A6AAAAAA"
@@ -59,8 +59,8 @@
     <Button
         android:id="@+id/btnConnectServer"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
         android:onClick="ConnectButton"
         android:text="@string/Connect"
         android:textStyle="bold"
@@ -72,7 +72,7 @@
     <EditText
         android:id="@+id/txtSendMessage"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:background="#A6AAAAAA"
         android:ems="10"
@@ -88,7 +88,7 @@
     <Button
         android:id="@+id/btnSendMessage"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:onClick="SendMessage"
         android:text="@string/btnEnviar"
@@ -101,7 +101,7 @@
     <EditText
         android:id="@+id/txtUsername"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="28dp"
         android:background="#A6AAAAAA"
@@ -117,7 +117,7 @@
         android:id="@+id/btnHost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="32dp"
         android:onClick="HostServer"
         android:text="@string/Hostbtn"
@@ -130,7 +130,7 @@
         android:layout_width="110dp"
         android:layout_height="44dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="30dp"
         android:background="#A6AAAAAA"
         android:ems="10"
         android:hint="@string/hostPort"
@@ -148,7 +148,7 @@
         android:id="@+id/scrollView3"
         android:layout_width="322dp"
         android:layout_height="208dp"
-        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
@@ -157,7 +157,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tvChatHistory"

@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +27,7 @@ public class Chat extends AppCompatActivity {
     private EditText serverIp, serverPort, clientMessage, cliename, hostPort;
     private Button btnConnect, btnSend, btnHost;
     private TextView history;
+    private ScrollView scrollView;
 
     private SocketComms socket;
     private ChatServer chatServer;
@@ -51,7 +53,7 @@ public class Chat extends AppCompatActivity {
         btnConnect = findViewById(R.id.btnConnectServer);
         btnSend = findViewById(R.id.btnSendMessage);
         btnHost = findViewById(R.id.btnHost);
-
+        scrollView = findViewById(R.id.scrollView3);
         history = findViewById(R.id.tvChatHistory);
 
 
@@ -172,6 +174,13 @@ public class Chat extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                     history.setText(lastHistory);
+                                }
+                            });
+
+                            scrollView.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    scrollView.fullScroll(View.FOCUS_DOWN);
                                 }
                             });
                             /*
