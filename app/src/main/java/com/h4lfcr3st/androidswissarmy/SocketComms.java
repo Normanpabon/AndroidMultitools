@@ -34,13 +34,19 @@ public class SocketComms {
 
         this.socket = new Socket(this.host, this.port);
         this.oos = new ObjectOutputStream(this.socket.getOutputStream());
-        this.oos.writeObject(this.clientName+msg);
+        if(msg == null){
+            this.oos.writeObject(msg);
+        }else{
+            this.oos.writeObject(this.clientName+msg);
+        }
+
 
 
         this.ois = new ObjectInputStream(this.socket.getInputStream());
         serverFeedback = (String) this.ois.readObject();
 
         this.oos.close();
+        this.ois.close();
         return serverFeedback;
 
     }
