@@ -2,7 +2,9 @@ package com.h4lfcr3st.androidswissarmy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.net.IpSecManager;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -38,6 +40,8 @@ public class Chat extends AppCompatActivity {
 
     private volatile boolean stopThread = false;
 
+    private WifiManager wifi;
+
 
 
     @Override
@@ -52,9 +56,17 @@ public class Chat extends AppCompatActivity {
 
         btnConnect = findViewById(R.id.btnConnectServer);
         btnSend = findViewById(R.id.btnSendMessage);
+        btnSend.setEnabled(false);
         btnHost = findViewById(R.id.btnHost);
         scrollView = findViewById(R.id.scrollView3);
         history = findViewById(R.id.tvChatHistory);
+
+        //todo revisar
+        try {
+             wifi = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+        }catch (NullPointerException e){
+
+        }
 
 
     }
@@ -64,6 +76,15 @@ public class Chat extends AppCompatActivity {
         InitThread(10, this.socket, " ");
         Toast.makeText(this, "Fetching messages", Toast.LENGTH_SHORT).show();
 
+
+    }
+
+    public void ClearButton(View view){
+        btnSend.setEnabled(false);
+        cliename.setText("");
+        serverIp.setText("");
+        serverPort.setText("");
+        history.setText("");
     }
 
     public void ConnectButton(View view){
@@ -72,6 +93,7 @@ public class Chat extends AppCompatActivity {
         this.ip = serverIp.getText().toString();
         this.port = Integer.parseInt((serverPort.getText().toString()));
         this.clientName = cliename.getText().toString();
+        btnSend.setEnabled(true);
 
         ConnectServer();
 

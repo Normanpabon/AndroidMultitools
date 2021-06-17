@@ -20,7 +20,7 @@
     <string name="Username"> Username</string>
     <string name="Connect">Connect</string>
     <string name="port">Port</string>
-    <string name="MsgHint">set message</string>
+    <string name="MsgHint">type a message</string>
     <string name="btnEnviar">Send</string>
     <string name="hostPort">Host port</string>
     <string name="Hostbtn">Host</string>
