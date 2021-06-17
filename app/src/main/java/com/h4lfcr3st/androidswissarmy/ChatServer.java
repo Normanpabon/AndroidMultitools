@@ -7,6 +7,7 @@ import java.io.ObjectOutputStream;
 import java.io.StreamCorruptedException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.SocketException;
 
 public class ChatServer extends Thread {
 
@@ -63,8 +64,13 @@ public class ChatServer extends Thread {
             }
         }catch (StreamCorruptedException e){
             e.printStackTrace();
+            HostServer();
         }catch (NullPointerException e){
             e.printStackTrace();
+            HostServer();
+        }catch (SocketException e){
+            e.printStackTrace();
+            HostServer();
         }
 
     }
